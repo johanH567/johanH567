@@ -1,5 +1,47 @@
-pritn("hellow")
-
+<html>
+	<head>
+		<title>Registro de nuevos estudiantes</title>
+		<script>
+			function serFeliz(){
+			   alert("Ahora soy feliz porque sé JavaScript");
+			   return;			
+			}
+			function validar(){
+			    var txtN = document.getElementById("txtNombre");				
+				if(txtN.value.trim().length == 0){
+				   alert("Paila, no lo puede guardar, le falta el nombre.");
+				}			     
+			}
+		</script>
+	</head>
+	<body>	
+		<h1>Datos del estudiante</h1>
+		<table border = "1">
+			<tr>
+				<td><b>Nombre:   </b></td>
+				<td><input type="text" id="txtNombre" name="nombre"></input></td>
+			</tr>
+			<tr>
+				<td><b>Apellidos:   </b></td>
+				<td><input type="text" id="txtApellidos" name="apellidos"></input></td>
+			</tr>
+			<tr>
+				<td><b>Carrera:   </b></td>
+				<td><select name="carrera" id="txtcarrera">
+						<option value="vacio">Ninguna</option>
+						<option value="sistemas">Ingenieria de Sistemas</option>
+						<option value="medicina">Medician General</option>
+						<option value="derecho">Derecho Tributario</option>
+						<option value="Educacion">Educacion infanti</option>
+					</select>
+			</td>
+			</tr>
+		</table>
+		<br/>
+		<button onclick="serFeliz()"> haz click y se feliz</button>
+		<button onclick="validar()"> Guardar en Servidor</button>
+	</body>	
+</html>
 
 
 
